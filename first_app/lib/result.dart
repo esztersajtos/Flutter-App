@@ -26,6 +26,7 @@ class Result extends StatelessWidget {
       child: Text(
         resultPhrase, 
         style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+        textAlign: TextAlign.center,
       ),
     );
   }

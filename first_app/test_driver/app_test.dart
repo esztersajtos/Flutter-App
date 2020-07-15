@@ -31,11 +31,13 @@ void main() {
     });
 
     test('first question', () async {
-  
+      
       Future.delayed(Duration(seconds:30));
       CommonMethods(driver).verifyText("What's your favorite color?");
-      Future.delayed(Duration(seconds:30));
       CommonMethods(driver).tapFirstAnswer();
+      CommonMethods(driver).verifyText("Click again your favorite color?");
+      await driver.waitFor(find.text("Black"));   
+      CommonMethods(driver).tapSecondAnswer();
       Future.delayed(Duration(seconds:30));
     });
 

@@ -28,12 +28,12 @@ class _MyAppState extends State<MyApp> {
       ],
     },
     {
-      'questionText': 'What\'s your favorite animal?',
+      'questionText': 'Click again your favorite color?',
       'answers': [
-        {'text': 'Rabbit', 'score': 3},
-        {'text': 'Snake', 'score': 11},
-        {'text': 'Elephant', 'score': 5},
-        {'text': 'Lion', 'score': 9},
+        {'text': 'Black', 'score': 3},
+        {'text': 'Red', 'score': 11},
+        {'text': 'Green', 'score': 5},
+        {'text': 'White', 'score': 9},
       ],
     },
     {
@@ -65,12 +65,12 @@ class _MyAppState extends State<MyApp> {
     setState(() {
       _questionIndex = _questionIndex + 1;
     });
-    print(_questionIndex);
-    if (_questionIndex < _questions.length) {
-      print('We have more questions!');
-    } else {
-      print('No more questions!');
-    }
+    // print(_questionIndex);
+    // if (_questionIndex < _questions.length) {
+    //   print('We have more questions!');
+    // } else {
+    //   print('No more questions!');
+    // }
   }
 
   @override

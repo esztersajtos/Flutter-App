@@ -16,4 +16,9 @@ class CommonMethods {
   Future<void> tapFirstAnswer() async {
     return await driver.tap(firstAnswerButton);
   }
+
+    final secondAnswerButton = find.text("Max");
+  Future<void> tapSecondAnswer() async {
+    return await driver.tap(secondAnswerButton);
+  }
 }

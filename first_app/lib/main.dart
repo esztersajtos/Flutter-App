@@ -19,7 +19,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   final _questions = const [
     {
-      'questionText': 'What\'s your favorite color?',
+      'questionText': 'Which lifes matters?',
       'answers': [
         {'text': 'Black', 'score': 10},
         {'text': 'Red', 'score': 5},
@@ -39,10 +39,10 @@ class _MyAppState extends State<MyApp> {
     {
       'questionText': 'Who\'s your favorite instructor?',
       'answers': [
-        {'text': 'Max', 'score': 1},
-        {'text': 'Max', 'score': 1},
-        {'text': 'Max', 'score': 1},
-        {'text': 'Max', 'score': 1},
+        {'text': 'Max1', 'score': 1},
+        {'text': 'Max2', 'score': 1},
+        {'text': 'Max3', 'score': 1},
+        {'text': 'Max4', 'score': 1},
       ],
     },
   ];

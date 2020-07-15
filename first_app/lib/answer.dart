@@ -6,7 +6,7 @@ class Answer extends StatelessWidget {
 
   Answer(this.selectHandler, this.answerText);
 
-  @override 
+  @override
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
@@ -15,7 +15,6 @@ class Answer extends StatelessWidget {
         textColor: Colors.white,
         child: Text(answerText),
         onPressed: selectHandler,
-        key: ValueKey('button'),
       ),
     );
   }

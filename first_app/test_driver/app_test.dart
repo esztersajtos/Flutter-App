@@ -1,14 +1,15 @@
 // Imports the Flutter Driver API.
 import 'package:flutter_driver/flutter_driver.dart';
 import 'package:test/test.dart';
+import 'common_methods.dart';
 
 void main() {
   group('My First App', () {
     // First, defin the Finders and use them to locate widgets from the
     // test suite. Note: the Strings provided to the `byValueKey` method must
     // be the same as the Strings we used for the Keys in step 1.
-    final questionTextFinder = find.text('question');
-    final buttonFinder = find.byValueKey('black');
+  
+    
 
     FlutterDriver driver;
 
@@ -25,8 +26,10 @@ void main() {
     });
 
     test('first question', () async {
-      // Use the `driver.getText` method to verify the counter starts at 0.
-      expect(await driver.getText(questionTextFinder), "What's your favorite color?");
+  
+      Future.delayed(Duration(seconds:30));
+      CommonMethods(driver).verifyText("What's your favorite color?");
+      CommonMethods(driver).tapFirstAnswer();
     });
 
     // test('choose an answer', () async {

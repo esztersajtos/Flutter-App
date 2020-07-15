@@ -25,11 +25,18 @@ void main() {
       }
     });
 
+    test('check flutter driver health', () async {
+      Health health = await driver.checkHealth();
+      print(health.status);
+    });
+
     test('first question', () async {
   
       Future.delayed(Duration(seconds:30));
       CommonMethods(driver).verifyText("What's your favorite color?");
+      Future.delayed(Duration(seconds:30));
       CommonMethods(driver).tapFirstAnswer();
+      Future.delayed(Duration(seconds:30));
     });
 
     // test('choose an answer', () async {
